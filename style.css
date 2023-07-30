@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Inter&family=Noto+Sans:wght@400;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg-color:#caf0f8;
+    --accent-color:#00b4d8;
+    --secondary-text-color:#1b4965;
+    --primary-text-color:#003049;
+    --dark-color:#03045e;
+}
+body{
+    font-family: 'Noto Sans', sans-serif;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.container{
+    max-width: 1100px;
+    margin-inline: auto;
+    padding-inline: 25px;
+}
+.main-nav{
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.nav-links ul{
+    justify-content: end;
+    gap: 40px;
+}
+ul{
+    list-style: none;
+}
+.logo h2{
+    font-family: 'Borel', cursive;
+    color: var(--dark-color);
+}
+.links{
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    transition: 0.3s ease-in;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+    
+}
+.links:hover{
+    color: var(--accent-color);
+}
+.s-btn{
+    border: 0.7px solid var(--secondary-text-color);
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    color: var(--secondary-text-color) !important;
+    transition: 0.3s ease-in;
+}
+.s-btn:hover{
+    border-color: var(--accent-color);
+    color: var(--accent-color) !important;
+}
+.p-btn{
+    background-color: var(--accent-color);
+    padding: 12px 24px;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: 0.3s ease-out;
+}
+.p-btn:hover{
+    background-color: #03045e;
+    color: #ffffff;
+}
+.header{
+    background-image: url(image_assets/image-slide.jpg);
+    height: 700px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+.header .text{
+    color: white;
+    position: relative;
+    top: 300px;
+}
+.text .head{
+    font-family: 'Borel', cursive;
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 3.5rem;
+}
+.text .desc{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.travel-head{
+    justify-content: center;
+    margin-top: 25px;
+    font-family: 'Borel',cursive;
+    height: 50px;
+}
+.travel-head p{
+    padding: 10px 18px;
+    align-items: center;
+    border-radius: 10px;
+    color: var(--primary-text-color);
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.animation-boxes{
+    justify-content: center;
+    position: relative;
+    margin-top: 5px;
+    height: 700px;
+    width: 1000px;
+}
+.hover-box{
+    height: 700px;
+    width: 800px;
+    position: absolute;
+    top: 0;
+}
+.first-boxes{
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+}
+.second-boxes{
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    margin-left: 10px;
+}
+.box-pic1{
+    width: 100%;
+    height: 200px;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+    background-image: url(image_assets/taj\ mahal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 2px 2px 10px #03045e;
+}
+.box-pic2{
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+    background-image: url(image_assets/kashmir\ 2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 10px #03045e;
+}
+.box-pic3{
+    width: 100%;
+    height: 200px;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+    background-image: url(image_assets/kashmir.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 10px #03045e;
+    background-position: center;
+}
+.box-pic4{
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+    background-image: url(image_assets/kerala.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 10px #03045e;
+}
+.hover-box:hover{
+    .box-pic1{
+        transform: translate(-75px,-30px);
+    }
+    .box-pic2{
+        transform: translate(-75px,30px);
+        
+    }
+    .box-pic3{
+        transform: translate(75px,-30px);
+    }
+    .box-pic4{
+        transform: translate(75px,30px);
+    }
+}
+.content1{
+    justify-content: center;
+}
+.seasional-contents{
+    background-color: #edf6f9;
+    width: 1000px;
+    height: 500px;
+    margin-top: 10px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px #caf0f8;
+}
+.head-content{
+    display: flex;
+    justify-content: center;
+}
+.head-content p{
+    font-family: 'Borel', cursive;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--primary-text-color);
+    margin-top: 30px;
+}
+.card-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-inline: 20px;
+    margin-top: 15px;
+}
+.cards{
+    width: 200px;
+    min-height: 300px;
+    background:black;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)) ,url(image_assets/summer-pic.jpg);
+    background-size: cover;
+    transition: all 0.5s ease;
+    background-position: center;
+}
+.cards h3{
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.cards:nth-child(2){
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)) ,url(image_assets/winter-pic.jpg);
+    background-size: cover;
+    transition: all 0.5s ease;
+}
+.cards:nth-child(3){
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)) ,url(image_assets/moonsoon.jpg);
+    background-size: cover;
+    transition: all 0.5s ease;
+}
+.cards:nth-child(4){
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)) ,url(image_assets/spring.jpg);
+    background-size: cover;
+    transition: all 0.5s ease;
+    object-fit: cover;
+    background-position: right;
+}
+.cards:hover{
+    transform: translateY(-20px);
+    box-shadow: 1px 1px 5px var(--primary-text-color);
+}
+.view{
+    justify-content: center;
+    margin-top: 20px;
+}
+.view-btn{
+    border: none;
+    padding: 8px 30px;
+    background: linear-gradient(to top left,#00a8e8,#03045e);
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    color: white;
+}
+.content2{
+    justify-content: center;
+    margin-top: 50px;
+}
+.cards-destination h3{
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.cards-destination{
+    width: 200px;
+    min-height: 300px;
+    background:black;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)) ,url(image_assets/india\ gate.jpg);
+    background-size: cover;
+    transition: all 0.5s ease;
+    background-position: center;
+}
+.cards-destination:nth-child(2){
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)) ,url(image_assets/shimla.jpg);
+    background-size: cover;
+    transition: all 0.5s ease;
+}
+.cards-destination:nth-child(3){
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)) ,url(image_assets/khasmir\ pic3.jpg);
+    background-size: cover;
+    transition: all 0.5s ease;
+}
+.cards-destination:nth-child(4){
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)) ,url(image_assets/goa.jpg);
+    background-size: cover;
+    transition: all 0.5s ease;
+    object-fit: cover;
+    background-position: right;
+}
+.cards-destination:hover{
+    transform: translateY(-20px);
+    box-shadow: 1px 1px 5px var(--primary-text-color);
+}
+.content3{
+    justify-content: center;
+    margin-top: 50px;
+}
+.cards-adventure h3{
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.cards-adventure{
+    width: 200px;
+    min-height: 300px;
+    background:black;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)) ,url(image_assets/leh\ pic.jpg);
+    background-size: cover;
+    transition: all 0.5s ease;
+    background-position: center;
+}
+.cards-adventure:nth-child(2){
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)) ,url(image_assets/manali.jpg);
+    background-size: cover;
+    transition: all 0.5s ease;
+    background-position: center;
+}
+.cards-adventure:nth-child(3){
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)) ,url(image_assets/ladakh\ pic.jpeg);
+    background-size: cover;
+    transition: all 0.5s ease;
+    background-position: center;
+}
+.cards-adventure:nth-child(4){
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)) ,url(image_assets/kashmir.jpg);
+    background-size: cover;
+    transition: all 0.5s ease;
+    object-fit: cover;
+    background-position: center;
+}
+.cards-adventure:hover{
+    transform: translateY(-20px);
+    box-shadow: 1px 1px 5px var(--primary-text-color);
+}
+.content4{
+    justify-content: center;
+    margin-top: 50px;
+}
+.cards-religious h3{
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.cards-religious{
+    width: 200px;
+    min-height: 300px;
+    background:black;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)) ,url(image_assets/varanasi.jpg);
+    background-size: cover;
+    transition: all 0.5s ease;
+    background-position: center;
+}
+.cards-religious:nth-child(2){
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)) ,url(image_assets/kedarnath.jpg);
+    background-size: cover;
+    transition: all 0.5s ease;
+    background-position: center;
+}
+.cards-religious:nth-child(3){
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)) ,url(image_assets/haridwar.jpg);
+    background-size: cover;
+    transition: all 0.5s ease;
+    background-position: center;
+}
+.cards-religious:nth-child(4){
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)) ,url(image_assets/chennai.jpg);
+    background-size: cover;
+    transition: all 0.5s ease;
+    object-fit: cover;
+    background-position: center;
+}
+.cards-religious:hover{
+    transform: translateY(-20px);
+    box-shadow: 1px 1px 5px var(--primary-text-color);
+}
+.other-contents-main{
+    background-color: #f4f1de;
+    width: 1000px;
+    height: 500px;
+    margin-top: 10px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px #caf0f8;
+    flex-direction: row;
+    gap: 100px;
+    overflow: hidden;
+}
+.img{
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+    overflow: hidden;
+    background-image: url(image_assets/man\ standing.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.other-content{
+    flex-direction: column;
+}
+.other-head{
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 3rem;
+}
+.other-para{
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 20px;
+}
+.all-btn{
+    text-decoration: none;
+    padding: 15px 25px;
+    background-color: var(--secondary-text-color);
+    margin-top: 50px;
+    justify-content: center;
+    color: #f4f1de;
+    border-radius: 6px;
+    font-size: 1.5rem;
+    transition: all 0.3s ease-in;
+}
+.all-btn:hover{
+    box-shadow: 1px 1px 6px #03045e;
+    background-color: var(--dark-color);
+}
+.footer-container{
+    align-items: flex-start;
+    justify-content: space-between;
+}                         
+.link-coloumn{
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+footer{
+    background-color: var(--bg-color);
+    padding-block: 80px;
+    margin-top: 50px;
+}
+.footer-links{
+    text-decoration: none;
+    color: var(--primary-text-color);
+    font-weight: 500;
+}
+.footer-links:hover{
+    color: var(--dark-color);
+}
