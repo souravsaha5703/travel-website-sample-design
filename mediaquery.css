@@ -1,0 +1,220 @@
+@media screen and (max-width:992px) {
+    .toggle-btn{
+        display: block;
+        margin-right: 20px;
+    }
+    .main-nav{
+        overflow: initial;
+    }
+    .nav-links{
+        position: absolute;
+        background-color: white;
+        left: -100%;
+        top: 100%;
+        width: 100%;
+        padding-block: 20px;
+        transition: 0.2s ease-in-out;
+        z-index: 100;
+    }
+    .nav-links.active{
+        left: 0;
+    }
+    .nav-links ul{
+        flex-direction: column;
+    }
+    .cards:nth-child(4){
+        display: none;
+    }
+    .cards-destination:nth-child(4){
+        display: none;
+    }
+    .cards-adventure:nth-child(4){
+        display: none;
+    }
+    .cards-religious:nth-child(4){
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .text .head{
+        font-size: 2.5rem;
+    }
+    .text .desc{
+        font-size: 1.3rem;
+    }
+    .header{
+        height: 600px;
+    }
+    .travel-head{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .animation-boxes{
+        display: none;
+    }
+    .travel-head p{
+        font-size: 1.5rem;
+    }
+    .cards:nth-child(4){
+        display: none;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    .cards-destination:nth-child(4){
+        display: none;
+    }
+    .cards-adventure:nth-child(4){
+        display: none;
+    }
+    .cards-religious:nth-child(4){
+        display: none;
+    }
+    .img{
+        width: 400px;
+    }
+    .other-head{
+        font-size: 2rem;
+        margin-right: 20px;
+    }
+    .other-para{
+        font-size: 1rem;
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width:726px) {
+    .cards:nth-child(4){
+        display: none;
+    }
+    .cards-destination:nth-child(3){
+        display: none;
+    }
+    .cards-adventure:nth-child(3){
+        display: none;
+    }
+    .cards-religious:nth-child(3){
+        display: none;
+    }
+}
+@media screen and (max-width:682px) {
+    .header{
+        height: 500px;
+    }
+    .header .text{
+        position: absolute;
+    }
+    .text .head{
+        font-size: 2rem;
+    }
+    .text .desc{
+        font-size: 1rem;
+    }
+    .travel-head{
+        text-align: center;
+    }
+    .travel-head p{
+        font-size: 1.2rem;
+    }
+    .head-content p{
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    .cards:nth-child(3){
+        display: none;
+    }
+    .cards{
+        width: 150px;
+        height: 200px;
+    }
+    .card-content{
+        justify-content: center;
+        gap: 40px;
+    }
+    .seasional-contents{
+        height: 400px;
+    }
+    .view{
+        margin-top: 30px;
+    }
+    .view-btn{
+        padding: 8px 15px;
+        font-size: 1rem;
+    }
+    .cards-destination:nth-child(3){
+        display: none;
+    }
+    .cards-destination{
+        width: 150px;
+        height: 200px;
+    }
+    .cards-adventure:nth-child(3){
+        display: none;
+    }
+    .cards-adventure{
+        width: 150px;
+        height: 200px;
+    }
+    .cards-religious:nth-child(3){
+        display: none;
+    }
+    .cards-religious{
+        width: 150px;
+        height: 200px;
+    }
+    .other-contents-main{
+        height: 300px;
+        justify-content: space-evenly;
+        gap: 10px;
+    }
+    .img{
+        height: 400px;
+        width: 170px;
+    }
+    .other-content{
+        width: 300px;
+        height: 200px;
+        justify-content: center;
+        align-items: center;
+    }
+    .other-head{
+        font-size: 1.5rem;
+        
+    }
+    .other-para{
+        font-size: 1rem;
+    }
+    .all-btn{
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+    .footer-container{
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        align-items: center;
+    }
+    .link-coloumn{
+       align-items: stretch;
+    }
+}
+@media screen and (max-width:426px) {
+    .cards:nth-child(2){
+        display: none;
+    }
+    .cards-destination:nth-child(2){
+        display: none;
+    }
+    .cards-adventure:nth-child(2){
+        display: none;
+    }
+    .cards-religious:nth-child(2){
+        display: none;
+    }
+
+}
+@media screen and (max-width:320px) {
+    .travel-head{
+        margin-top: 45px;
+    }
+}
