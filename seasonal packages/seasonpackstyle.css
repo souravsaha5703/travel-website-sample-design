@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Inter&family=Noto+Sans:wght@400;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg-color:#caf0f8;
+    --accent-color:#00b4d8;
+    --secondary-text-color:#1b4965;
+    --primary-text-color:#003049;
+    --dark-color:#03045e;
+}
+body{
+    font-family: 'Noto Sans', sans-serif;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.container{
+    max-width: 1100px;
+    margin-inline: auto;
+    padding-inline: 25px;
+    overflow: hidden;
+}
+.main-nav{
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+.nav-links ul{
+    justify-content: end;
+    gap: 40px;
+}
+.nav-links{
+    flex-basis: 730px;
+}
+ul{
+    list-style: none;
+}
+.logo h2{
+    font-family: 'Borel', cursive;
+    color: var(--dark-color);
+}
+.links{
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    transition: 0.3s ease-in;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+    
+}
+.links:hover{
+    color: var(--accent-color);
+}
+.toggle-btn{
+    display: none;
+}
+.s-btn{
+    border: 0.7px solid var(--secondary-text-color);
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    color: var(--secondary-text-color) !important;
+    transition: 0.3s ease-in;
+}
+.s-btn:hover{
+    border-color: var(--accent-color);
+    color: var(--accent-color) !important;
+}
+.p-btn{
+    background-color: var(--accent-color);
+    padding: 12px 24px;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: 0.3s ease-out;
+}
+.p-btn:hover{
+    background-color: #03045e;
+    color: #ffffff;
+}
+.header{
+    position: relative;
+    height: 450px;
+    width: 100%;
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)) ,url(../image_assets/summer\ back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+.header-head{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 30%;
+}
+.header-head h1{
+    color: white;
+    font-family: 'Borel', cursive;
+    font-size: 3rem;
+    font-weight: 500;
+}
+.header-head i{
+    color: white;
+    font-size: 3rem;
+    margin-left: 30px;
+}
+.header h4{
+    position: absolute;
+    background-color: #caf0f8;
+    padding: 12px 24px;
+    font-size: 2rem;
+    color: var(--primary-text-color);
+    border-radius: 15px;
+    bottom: -30px;
+}
+.card-container-main{
+    margin-top: 60px;
+    height: fit-content;
+    justify-content: center;
+}
+.card-container{
+    width: 1100px;
+    background-color: #03045e;
+    height: 600px;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 500px;
+    background-color: #edf6f9;
+    border-radius: 10px;
+}
+.cards h2{
+    margin-left: 30px;
+    color: var(--secondary-text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-block: 10px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.cards .img{
+    margin-left: 20px;
+    width: 90%;
+    height: 220px;
+    background-image: url(../image_assets/goa\ beach.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.cards .card-content{
+    margin-left: 30px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.card-content .duration{
+    display: flex;
+    gap: 15px;
+    color: var(--primary-text-color);
+}
+.card-content .duration i{
+    font-size: 1.3rem;
+}
+.card-content .location{
+    display: flex;
+    gap: 15px;
+    color: var(--primary-text-color);
+    margin-top: 10px;
+}
+.card-content .location i{
+    font-size: 1.3rem;
+}
